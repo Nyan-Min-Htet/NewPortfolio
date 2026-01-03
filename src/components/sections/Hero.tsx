@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Github, Linkedin, Mail } from "lucide-react";
+import profilePic from "@/img/pf.jpg"; // Correct relative path
 
 export function Hero() {
   const scrollToProjects = () => {
@@ -13,10 +14,10 @@ export function Hero() {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden"
+      className="relative min-h-[130vh] flex items-center justify-center overflow-hidden"
     >
       {/* Animated Background Orb */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] md:w-[800px] md:h-[800px]">
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[650px] h-[650px] md:w-[850px] md:h-[850px]">
         <div className="absolute inset-0 bg-gradient-radial from-primary/20 via-primary/5 to-transparent animate-pulse-slow rounded-full blur-3xl" />
         <div className="absolute inset-12 bg-gradient-radial from-accent/15 via-accent/5 to-transparent animate-float rounded-full blur-2xl" />
       </div>
@@ -25,7 +26,7 @@ export function Hero() {
       <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:60px_60px]" />
 
       {/* Content */}
-      <div className="relative z-10 container text-center px-6">
+      <div className="relative z-10 container text-center px-10">
         <div className="max-w-3xl mx-auto">
           {/* Badge */}
           <div className="inline-flex items-center gap-2 glass px-4 py-2 mb-8 opacity-0 animate-fade-up">
@@ -35,15 +36,25 @@ export function Hero() {
             </span>
           </div>
 
+          {/* Profile Photo */}
+          <div className="relative mb-8 opacity-0 animate-fade-up stagger-1">
+            <img
+              src={profilePic}
+              alt="Profile"
+              className="w-36 h-36 md:w-40 md:h-40 rounded-full mx-auto border-4 border-primary/20 shadow-lg object-cover transition-transform duration-500 hover:scale-105"
+            />
+            <div className="absolute -inset-1 rounded-full border-2 border-primary/10 animate-ping-slow"></div>
+          </div>
+
           {/* Main Heading */}
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6 opacity-0 animate-fade-up stagger-1">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6 opacity-0 animate-fade-up stagger-2">
             <span className="text-foreground">Full-Stack Developer</span>
             <br />
             <span className="text-gradient">Java & Modern Frontend</span>
           </h1>
 
           {/* Subtitle */}
-          <p className="text-lg md:text-xl text-muted-foreground max-w-xl mx-auto mb-10 opacity-0 animate-fade-up stagger-2">
+          <p className="text-lg md:text-xl text-muted-foreground max-w-xl mx-auto mb-10 opacity-0 animate-fade-up stagger-3">
             Hi, I'm{" "}
             <span className="text-foreground font-semibold">Nyan Min Htet</span>
             . I craft robust backend systems and beautiful user interfaces,
@@ -52,7 +63,7 @@ export function Hero() {
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-5 opacity-0 animate-fade-up stagger-3">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-5 opacity-0 animate-fade-up stagger-4">
             <Button variant="hero" size="lg" onClick={scrollToProjects}>
               View My Work
               <ArrowRight className="w-5 h-5" />
@@ -63,7 +74,7 @@ export function Hero() {
           </div>
 
           {/* Social Links */}
-          <div className="flex items-center justify-center gap-4 opacity-0 animate-fade-up stagger-4">
+          <div className="flex items-center justify-center gap-5 opacity-0 animate-fade-up stagger-5">
             <a
               href="https://github.com"
               target="_blank"
@@ -91,9 +102,9 @@ export function Hero() {
       </div>
 
       {/* Scroll Indicator */}
-      <div className="absolute bottom-7 -translate-x-1/2 flex flex-col items-center gap-2 opacity-0 animate-fade-up stagger-5">
+      <div className="absolute bottom-0 -translate-x-1/2 flex flex-col items-center gap-4 opacity-0 animate-fade-up stagger-6">
         <span className="text-xs text-muted-foreground">Scroll to explore</span>
-        <div className="w-6 h-10 rounded-full border-2 border-muted-foreground/30 flex justify-center pt-2">
+        <div className="w-6 h-10 rounded-full border-2 border-muted-foreground/30 flex justify-center pt-2 mt-7">
           <div className="w-1.5 h-3 bg-primary rounded-full animate-bounce" />
         </div>
       </div>

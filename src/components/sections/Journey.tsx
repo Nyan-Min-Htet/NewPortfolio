@@ -6,7 +6,8 @@ const timeline = [
     year: "2024 - Present",
     title: "BSc in Computer Science",
     institution: "Dagon University",
-    description: "Pursuing advanced studies in computer science, focusing on software engineering and system design.",
+    description:
+      "Pursuing advanced studies in computer science, focusing on software engineering and system design.",
     type: "education",
     icon: GraduationCap,
   },
@@ -14,7 +15,8 @@ const timeline = [
     year: "2022 - 2024",
     title: "Diploma in Computing",
     institution: "Info Myanmar College",
-    description: "Comprehensive computing education covering programming fundamentals, database management, and web development.",
+    description:
+      "Comprehensive computing education covering programming fundamentals, database management, and web development.",
     type: "education",
     icon: Award,
   },
@@ -22,7 +24,8 @@ const timeline = [
     year: "2023",
     title: "Java Spring Boot Certification",
     institution: "Professional Development",
-    description: "Advanced certification in enterprise Java development using Spring ecosystem.",
+    description:
+      "Advanced certification in enterprise Java development using Spring ecosystem.",
     type: "certification",
     icon: Award,
   },
@@ -30,7 +33,8 @@ const timeline = [
     year: "2023 - Present",
     title: "Freelance Developer",
     institution: "Self-Employed",
-    description: "Building custom web applications and APIs for clients, specializing in Java backend and React frontend.",
+    description:
+      "Building custom web applications and APIs for clients, specializing in Java backend and React frontend.",
     type: "work",
     icon: Briefcase,
   },
@@ -52,7 +56,7 @@ export function Journey() {
             The <span className="text-gradient-accent">Journey</span>
           </h2>
           <p className="text-muted-foreground max-w-xl mx-auto">
-            From academic foundations to professional experience, here's how my 
+            From academic foundations to professional experience, here's how my
             developer journey has evolved.
           </p>
         </div>
@@ -75,7 +79,10 @@ export function Journey() {
                   !isEven && "md:flex-row-reverse",
                   "opacity-0 animate-fade-up"
                 )}
-                style={{ animationDelay: `${index * 0.15}s`, animationFillMode: "forwards" }}
+                style={{
+                  animationDelay: `${index * 0.15}s`,
+                  animationFillMode: "forwards",
+                }}
               >
                 {/* Timeline Node */}
                 <div className="absolute left-8 md:left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-background border-2 border-primary z-10">
@@ -92,12 +99,16 @@ export function Journey() {
                 >
                   <div className="glass p-6 group hover:border-primary/30 transition-all duration-300">
                     <div className="flex items-start gap-4">
-                      <div className={cn(
-                        "w-12 h-12 rounded-xl flex items-center justify-center shrink-0",
-                        item.type === "education" && "bg-primary/20 text-primary",
-                        item.type === "certification" && "bg-accent/20 text-accent",
-                        item.type === "work" && "bg-muted text-foreground"
-                      )}>
+                      <div
+                        className={cn(
+                          "w-12 h-12 rounded-xl flex items-center justify-center shrink-0",
+                          item.type === "education" &&
+                            "bg-primary/20 text-primary",
+                          item.type === "certification" &&
+                            "bg-accent/20 text-accent",
+                          item.type === "work" && "bg-muted text-foreground"
+                        )}
+                      >
                         <Icon className="w-5 h-5" />
                       </div>
                       <div className="flex-1">
@@ -107,8 +118,12 @@ export function Journey() {
                         <h3 className="text-lg font-bold mb-1 group-hover:text-primary transition-colors">
                           {item.title}
                         </h3>
-                        <p className="text-sm text-primary/80 mb-2">{item.institution}</p>
-                        <p className="text-sm text-muted-foreground">{item.description}</p>
+                        <p className="text-sm text-primary/80 mb-2">
+                          {item.institution}
+                        </p>
+                        <p className="text-sm text-muted-foreground">
+                          {item.description}
+                        </p>
                       </div>
                     </div>
                   </div>
