@@ -3,6 +3,15 @@ import { GraduationCap, Award, Briefcase } from "lucide-react";
 
 const timeline = [
   {
+    year: "2026 - Present",
+    title: "Junior Service Technician",
+    institution: "Golden Power Technology Co., Ltd",
+    description:
+      "Building custom web applications and APIs for clients, specializing in Java backend and React frontend.",
+    type: "work",
+    icon: Briefcase,
+  },
+  {
     year: "2025",
     title: "Higher National Diploma in Computing",
     institution: "Info Myanmar College",
@@ -22,21 +31,12 @@ const timeline = [
   },
   {
     year: "2022",
-    title: "Certification in Web Development Cours",
+    title: "Certification in Web Development Course",
     institution: "Advanced Institute Of Mechanics & Technology (AIMT)",
     description:
       "Advanced certification in enterprise Java development using Spring ecosystem.",
     type: "certification",
     icon: Award,
-  },
-  {
-    year: "2026 - Present",
-    title: "Junior Service Technician",
-    institution: "Golden Power Technology Co., Ltd",
-    description:
-      "Building custom web applications and APIs for clients, specializing in Java backend and React frontend.",
-    type: "work",
-    icon: Briefcase,
   },
 ];
 
