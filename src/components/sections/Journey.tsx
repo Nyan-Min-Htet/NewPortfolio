@@ -42,7 +42,7 @@ const timeline = [
 
 export function Journey() {
   return (
-    <section id="journey" className="py-15 md:py-32 relative">
+    <section id="journey" className="py-22 md:py-32 relative">
       {/* Background Accent */}
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-gradient-radial from-accent/10 via-transparent to-transparent blur-3xl" />
 
