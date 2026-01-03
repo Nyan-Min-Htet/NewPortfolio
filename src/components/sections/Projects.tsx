@@ -50,6 +50,18 @@ const projects = [
     github: "https://github.com/Nyan-Min-Htet/Online-shopping-website",
     live: "https://example.com",
   },
+  {
+    id: 5,
+    title: "Customer Information System",
+    description:
+      "A robust Customer Information System that centralizes customer data, manages profiles, tracks interactions, and supports analytics for better decision-making. Built with a secure backend and an intuitive frontend for efficient customer management.",
+    technologies: ["Java", "MySQL"],
+    category: "Backend",
+    image:
+      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=500&h=300&fit=crop",
+    github: "https://github.com/Nyan-Min-Htet/Customer-Information-System",
+    live: "https://example.com",
+  },
 ];
 
 const categories = ["All", "Full-Stack", "Frontend", "Backend"];
