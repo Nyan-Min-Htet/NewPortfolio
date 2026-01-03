@@ -30,7 +30,7 @@ const skills = [
 
 export function About() {
   return (
-    <section id="about" className="py-22 md:py-32 relative overflow-hidden">
+    <section id="about" className="py-24 md:py-40 relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.01)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.01)_1px,transparent_1px)] bg-[size:80px_80px]" />
 

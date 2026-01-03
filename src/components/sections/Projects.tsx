@@ -63,7 +63,7 @@ export function Projects() {
   );
 
   return (
-    <section id="projects" className="py-22 md:py-32 relative">
+    <section id="projects" className="py-32 md:py-45 relative">
       {/* Background Accent */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-radial from-primary/10 via-transparent to-transparent blur-3xl" />
 

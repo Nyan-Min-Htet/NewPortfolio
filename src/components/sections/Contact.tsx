@@ -26,7 +26,7 @@ export function Contact() {
   };
 
   return (
-    <section id="contact" className="py-24 md:py-32 relative">
+    <section id="contact" className="py-24 md:py-30 relative">
       {/* Background Accents */}
       <div className="absolute top-1/2 left-0 w-72 h-72 bg-gradient-radial from-primary/10 via-transparent to-transparent blur-3xl" />
       <div className="absolute top-1/4 right-0 w-72 h-72 bg-gradient-radial from-accent/10 via-transparent to-transparent blur-3xl" />
