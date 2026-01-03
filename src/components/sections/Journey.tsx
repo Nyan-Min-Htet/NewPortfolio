@@ -3,36 +3,36 @@ import { GraduationCap, Award, Briefcase } from "lucide-react";
 
 const timeline = [
   {
-    year: "2024 - Present",
-    title: "BSc in Computer Science",
-    institution: "Dagon University",
+    year: "2025",
+    title: "Higher National Diploma in Computing",
+    institution: "Info Myanmar College",
     description:
       "Pursuing advanced studies in computer science, focusing on software engineering and system design.",
     type: "education",
     icon: GraduationCap,
   },
   {
-    year: "2022 - 2024",
-    title: "Diploma in Computing",
-    institution: "Info Myanmar College",
+    year: "2023",
+    title: "Certificate in Java Programming",
+    institution: "Java Developer Class (JDC)",
     description:
       "Comprehensive computing education covering programming fundamentals, database management, and web development.",
     type: "education",
     icon: Award,
   },
   {
-    year: "2023",
-    title: "Java Spring Boot Certification",
-    institution: "Professional Development",
+    year: "2022",
+    title: "Certification in Web Development Cours",
+    institution: "Advanced Institute Of Mechanics & Technology (AIMT)",
     description:
       "Advanced certification in enterprise Java development using Spring ecosystem.",
     type: "certification",
     icon: Award,
   },
   {
-    year: "2023 - Present",
-    title: "Freelance Developer",
-    institution: "Self-Employed",
+    year: "2026 - Present",
+    title: "Junior Service Technician",
+    institution: "Golden Power Technology Co., Ltd",
     description:
       "Building custom web applications and APIs for clients, specializing in Java backend and React frontend.",
     type: "work",
@@ -42,7 +42,7 @@ const timeline = [
 
 export function Journey() {
   return (
-    <section id="journey" className="py-24 md:py-32 relative">
+    <section id="journey" className="py-15 md:py-32 relative">
       {/* Background Accent */}
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-gradient-radial from-accent/10 via-transparent to-transparent blur-3xl" />
 

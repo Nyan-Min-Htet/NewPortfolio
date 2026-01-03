@@ -66,7 +66,7 @@ export function Contact() {
                   <div>
                     <p className="text-xs text-muted-foreground mb-1">Email</p>
                     <p className="font-medium text-foreground">
-                      nyanminhtet@example.com
+                      nhtet9968@email.com
                     </p>
                   </div>
                 </a>
@@ -92,7 +92,7 @@ export function Contact() {
                   <div>
                     <p className="text-xs text-muted-foreground mb-1">Phone</p>
                     <p className="font-medium text-foreground">
-                      +95 9 XXX XXX XXX
+                      +95 9 964 165 768
                     </p>
                   </div>
                 </div>
@@ -104,7 +104,7 @@ export function Contact() {
               <h3 className="text-lg font-bold mb-4">Follow Me</h3>
               <div className="flex gap-4">
                 <a
-                  href="https://github.com"
+                  href="https://github.com/Nyan-Min-Htet"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-12 h-12 rounded-xl bg-muted flex items-center justify-center text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-all duration-300"
@@ -112,7 +112,7 @@ export function Contact() {
                   <Github className="w-5 h-5" />
                 </a>
                 <a
-                  href="https://linkedin.com"
+                  href="https://www.linkedin.com/in/nyan-min-htet-2699703a2"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-12 h-12 rounded-xl bg-muted flex items-center justify-center text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-all duration-300"

@@ -76,7 +76,7 @@ export function Hero() {
           {/* Social Links */}
           <div className="flex items-center justify-center gap-5 opacity-0 animate-fade-up stagger-5">
             <a
-              href="https://github.com"
+              href="https://github.com/Nyan-Min-Htet"
               target="_blank"
               rel="noopener noreferrer"
               className="w-12 h-12 glass flex items-center justify-center rounded-xl text-muted-foreground hover:text-foreground hover:border-primary/40 transition-all duration-300"
@@ -84,7 +84,7 @@ export function Hero() {
               <Github className="w-5 h-5" />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/nyan-min-htet-2699703a2"
               target="_blank"
               rel="noopener noreferrer"
               className="w-12 h-12 glass flex items-center justify-center rounded-xl text-muted-foreground hover:text-foreground hover:border-primary/40 transition-all duration-300"
@@ -92,7 +92,7 @@ export function Hero() {
               <Linkedin className="w-5 h-5" />
             </a>
             <a
-              href="mailto:nyanminhtet@example.com"
+              href="mailto:nhtet9968@gmail.com"
               className="w-12 h-12 glass flex items-center justify-center rounded-xl text-muted-foreground hover:text-foreground hover:border-primary/40 transition-all duration-300"
             >
               <Mail className="w-5 h-5" />

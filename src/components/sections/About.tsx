@@ -5,25 +5,25 @@ const skills = [
   {
     category: "Backend",
     icon: Server,
-    items: ["Java", "Spring Boot", "Spring Cloud", "REST APIs", "Microservices"],
+    items: ["Java", "Spring Boot", "Cloud", "Python", "PHP", "Microservices"],
     color: "primary",
   },
   {
     category: "Frontend",
     icon: Palette,
-    items: ["React", "TypeScript", "Tailwind CSS", "Next.js", "Redux"],
+    items: ["React", "TypeScript", "Tailwind CSS", "Next.js", "HTML", "CSS"],
     color: "accent",
   },
   {
     category: "Database",
     icon: Database,
-    items: ["PostgreSQL", "MySQL", "MongoDB", "Redis", "Hibernate"],
+    items: ["PostgreSQL", "MySQL", "MongoDB", "XAMPP", "Hibernate"],
     color: "primary",
   },
   {
     category: "DevOps & Tools",
     icon: Zap,
-    items: ["Docker", "Git", "CI/CD", "Linux", "AWS"],
+    items: ["Docker", "Git", "CI/CD", "Linux", "Azure"],
     color: "accent",
   },
 ];
@@ -47,34 +47,45 @@ export function About() {
 
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
           {/* About Text */}
-          <div className="space-y-6 opacity-0 animate-fade-up" style={{ animationFillMode: "forwards" }}>
+          <div
+            className="space-y-6 opacity-0 animate-fade-up"
+            style={{ animationFillMode: "forwards" }}
+          >
             <p className="text-lg text-muted-foreground leading-relaxed">
-              I'm a passionate <span className="text-foreground font-medium">full-stack developer</span> based 
-              in Myanmar, with a strong foundation in Java backend development and modern frontend technologies.
+              I'm a passionate{" "}
+              <span className="text-foreground font-medium">
+                full-stack developer
+              </span>{" "}
+              based in Myanmar, with a strong foundation in Java backend
+              development and modern frontend technologies.
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              My journey began at Info Myanmar College where I discovered my love for creating 
-              efficient, scalable systems. Now, as I continue my studies at Dagon University, 
-              I'm constantly expanding my knowledge in software architecture and system design.
+              My journey began at Info Myanmar College where I discovered my
+              love for creating efficient, scalable systems. Now, as I continue
+              my studies at Dagon University, I'm constantly expanding my
+              knowledge in software architecture and system design.
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              I believe in writing clean, maintainable code and creating user experiences that 
-              are both functional and delightful. When I'm not coding, you'll find me exploring 
-              new technologies and contributing to open-source projects.
+              I believe in writing clean, maintainable code and creating user
+              experiences that are both functional and delightful. When I'm not
+              coding, you'll find me exploring new technologies and contributing
+              to open-source projects.
             </p>
 
             {/* Stats */}
             <div className="grid grid-cols-3 gap-6 pt-6">
               {[
-                { value: "2+", label: "Years Experience" },
-                { value: "15+", label: "Projects Completed" },
+                { value: "3+", label: "Years Experience" },
+                { value: "13+", label: "Projects Completed" },
                 { value: "100%", label: "Client Satisfaction" },
               ].map((stat, index) => (
                 <div key={index} className="text-center">
                   <div className="text-2xl md:text-3xl font-bold text-gradient mb-1">
                     {stat.value}
                   </div>
-                  <div className="text-xs text-muted-foreground">{stat.label}</div>
+                  <div className="text-xs text-muted-foreground">
+                    {stat.label}
+                  </div>
                 </div>
               ))}
             </div>
@@ -91,12 +102,19 @@ export function About() {
                     "glass p-6 group hover:border-primary/30 transition-all duration-300",
                     "opacity-0 animate-fade-up"
                   )}
-                  style={{ animationDelay: `${index * 0.1}s`, animationFillMode: "forwards" }}
+                  style={{
+                    animationDelay: `${index * 0.1}s`,
+                    animationFillMode: "forwards",
+                  }}
                 >
-                  <div className={cn(
-                    "w-12 h-12 rounded-xl flex items-center justify-center mb-4",
-                    skill.color === "primary" ? "bg-primary/20 text-primary" : "bg-accent/20 text-accent"
-                  )}>
+                  <div
+                    className={cn(
+                      "w-12 h-12 rounded-xl flex items-center justify-center mb-4",
+                      skill.color === "primary"
+                        ? "bg-primary/20 text-primary"
+                        : "bg-accent/20 text-accent"
+                    )}
+                  >
                     <Icon className="w-5 h-5" />
                   </div>
                   <h3 className="font-bold mb-3 group-hover:text-primary transition-colors">
