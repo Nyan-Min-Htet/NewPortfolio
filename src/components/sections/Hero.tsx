@@ -50,7 +50,8 @@ export function Hero() {
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6 opacity-0 animate-fade-up stagger-2">
             <span className="text-foreground">Full-Stack Developer</span>
             <br />
-            <span className="text-gradient">Java & Modern Frontend</span>
+            <span className="text-gradient">&</span>
+            <span className="text-gradient">Modern Frontend</span>
           </h1>
 
           {/* Subtitle */}
