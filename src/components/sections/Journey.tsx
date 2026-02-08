@@ -7,7 +7,7 @@ const timeline = [
     title: "Junior Service Technician",
     institution: "Golden Power Technology Co., Ltd",
     description:
-      "Building custom web applications and APIs for clients, specializing in Java backend and React frontend.",
+      "Worked as a Junior Service Technician providing hands-on technical support for hardware, software, and basic network issues. Assisted in system installation, troubleshooting, and maintenance while ensuring smooth daily operations for users. Gained practical experience in problem-solving, customer support, and IT service workflows, with a strong focus on reliability and efficiency.",
     type: "work",
     icon: Briefcase,
   },
@@ -16,7 +16,7 @@ const timeline = [
     title: "Higher National Diploma in Computing",
     institution: "Info Myanmar College",
     description:
-      "Pursuing advanced studies in computer science, focusing on software engineering and system design.",
+      "Completed a Higher National Diploma in Computing with a solid foundation in web development, networking, databases, and system analysis. Developed both theoretical knowledge and practical skills through projects, case studies, and technical assignments, building readiness for real-world IT and technology-driven environments",
     type: "education",
     icon: GraduationCap,
   },
@@ -25,7 +25,7 @@ const timeline = [
     title: "Certificate in Java Programming",
     institution: "Java Developer Class (JDC)",
     description:
-      "Comprehensive computing education covering programming fundamentals, database management, and web development.",
+      "Earned a Certificate in Java Programming demonstrating proficiency in object-oriented programming concepts, Java syntax, and application development. Built small to medium-scale programs focusing on logic, data structures, and clean code practices, strengthening problem-solving and programming skills.",
     type: "education",
     icon: Award,
   },
@@ -34,7 +34,7 @@ const timeline = [
     title: "Certification in Web Development Course",
     institution: "Advanced Institute Of Mechanics & Technology (AIMT)",
     description:
-      "Advanced certification in enterprise Java development using Spring ecosystem.",
+      "Completed a Web Development course covering front-end and back-end fundamentals, including HTML, CSS, JavaScript, PHP, Python and basic server-side concepts. Gained experience in building responsive, user-friendly websites and understanding modern web development workflows.",
     type: "certification",
     icon: Award,
   },
@@ -77,7 +77,7 @@ export function Journey() {
                   "relative flex gap-8 mb-12 last:mb-0",
                   "md:flex-row",
                   !isEven && "md:flex-row-reverse",
-                  "opacity-0 animate-fade-up"
+                  "opacity-0 animate-fade-up",
                 )}
                 style={{
                   animationDelay: `${index * 0.15}s`,
@@ -94,7 +94,7 @@ export function Journey() {
                   className={cn(
                     "flex-1 ml-16 md:ml-0",
                     isEven ? "md:mr-auto md:pr-12" : "md:ml-auto md:pl-12",
-                    "md:w-[calc(50%-2rem)]"
+                    "md:w-[calc(50%-2rem)]",
                   )}
                 >
                   <div className="glass p-6 group hover:border-primary/30 transition-all duration-300">
@@ -106,7 +106,7 @@ export function Journey() {
                             "bg-primary/20 text-primary",
                           item.type === "certification" &&
                             "bg-accent/20 text-accent",
-                          item.type === "work" && "bg-muted text-foreground"
+                          item.type === "work" && "bg-muted text-foreground",
                         )}
                       >
                         <Icon className="w-5 h-5" />

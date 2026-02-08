@@ -51,6 +51,7 @@ export function Hero() {
             <span className="text-foreground">Full-Stack Developer</span>
             <br />
             <span className="text-gradient">&</span>
+            <br />
             <span className="text-gradient">Modern Frontend</span>
           </h1>
 
