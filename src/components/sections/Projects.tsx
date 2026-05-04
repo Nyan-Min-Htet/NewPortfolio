@@ -5,14 +5,16 @@ import { cn } from "@/lib/utils";
 import eCommerceImage from "@/img/image.png";
 import aIImage from "@/img/image copy.png";
 import fashionImage from "@/img/image copy 2.png";
+import inventoryImage from "@/img/photo_2026-05-04_20-37-05.jpg";
+import eCommerceImage2 from "@/img/photo_2026-05-04_20-55-07.jpg";
 
 const projects = [
   {
     id: 1,
-    title: "E-Commerce Platform",
+    title: "Selling Flower E-Commerce Platform",
     description:
       "A full-featured online shopping platform with secure payment integration, inventory management, and real-time order tracking. \n This is a full-stack e-commerce website built with HTML, CSS, and JavaScript are acts as a frontend and PHP is acts as a backend. It allows users to view and purchase flowers online.",
-    technologies: ["HTML", "CSS", "React", "JavaScript", "PHP"],
+    technologies: ["HTML", "CSS", "JavaScript", "PHP"],
     category: "Full-Stack",
     image: eCommerceImage,
     github: "https://github.com/Nyan-Min-Htet/E-Commerce-Website",
@@ -20,6 +22,28 @@ const projects = [
   },
   {
     id: 2,
+    title: "Inventory Management System",
+    description:
+      "Design and develop a scalable and simple Inventory Management System, aimed at optimizing stock control, reducing operational inefficiencies, and improving data accuracy across inventory workflows. The system provides real-time inventory tracking, intelligent stock management, and automated update mechanisms for incoming and outgoing products. It significantly minimizes manual errors while enhancing decision-making through clear and structured data visualization.",
+    technologies: ["Vue", "MySQL", "Laravel", "Tailwind CSS", "React Hooks"],
+    category: "Full-Stack",
+    image: inventoryImage,
+    github: "https://github.com/Nyan-Min-Htet/nordic.git",
+    live: "https://example.com",
+  },
+  {
+    id: 3,
+    title: "ECommerce Platform for Trend Driven Apparel & Accessories",
+    description:
+      "A sleek, responsive eCommerce SPA built with React, TypeScript, Tailwind CSS, and Framer‑Motion. Features dynamic product grids, category‑based navigation, comprehensive filter sidebar, and fast client‑side sorting. Designed for a polished, mobile‑friendly shopping experience with light/blue themes and fully‑responsive layouts. Perfect showcase of modern front‑end development skills.",
+    technologies: ["React", "Tailwind CSS", "Framer-motion", "TypeScript"],
+    category: "Full-Stack",
+    image: eCommerceImage2,
+    github: "https://github.com/Nyan-Min-Htet/htetX_horizon.git",
+    live: "https://htet-x-horizon.vercel.app/",
+  },
+  {
+    id: 4,
     title: "Socket Program Quizz and Guess Application",
     description:
       "The Quizz and Guess Game is a dual-mode desktop application developed in Python using socket programming and a Tkinter GUI. The system features a multi-threaded server capable of handling multiple clients simultaneously, ensuring a smooth multiplayer experience. This project highlights core concepts in network programming, threading, and desktop application development, making it an ideal showcase of my practical Python skills.",
@@ -29,7 +53,7 @@ const projects = [
       "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&h=400&fit=crop",
   },
   {
-    id: 3,
+    id: 5,
     title: "AI voice-activated assistant",
     description:
       "This is an AI based application that using for voice assistant with using python programming language. It allows to hand-free commands, and more enhance interactive between AI. It can perform many actions by voice command and text command such as open youtube, social media, ask any questions, and also check the chat history.",
@@ -40,7 +64,7 @@ const projects = [
     live: "https://example.com",
   },
   {
-    id: 4,
+    id: 6,
     title: "Fashion Wesbite Design",
     description:
       "This project is a only design for fashion website and it can log in, log out, register, and view products such as shirts, shoes, suit, and trousers with price details.",
@@ -51,7 +75,7 @@ const projects = [
     live: "https://example.com",
   },
   {
-    id: 5,
+    id: 7,
     title: "Customer Information System",
     description:
       "A robust Customer Information System that centralizes customer data, manages profiles, tracks interactions, and supports analytics for better decision-making. Built with a secure backend and an intuitive frontend for efficient customer management.",
@@ -71,7 +95,8 @@ export function Projects() {
   const [hoveredProject, setHoveredProject] = useState<number | null>(null);
 
   const filteredProjects = projects.filter(
-    (project) => activeCategory === "All" || project.category === activeCategory
+    (project) =>
+      activeCategory === "All" || project.category === activeCategory,
   );
 
   return (
@@ -115,7 +140,7 @@ export function Projects() {
               key={project.id}
               className={cn(
                 "group glass glass-hover overflow-hidden",
-                "opacity-0 animate-fade-up"
+                "opacity-0 animate-fade-up",
               )}
               style={{
                 animationDelay: `${index * 0.1}s`,
@@ -186,7 +211,7 @@ export function Projects() {
                     className={cn(
                       "w-4 h-4 ml-auto text-muted-foreground transition-all duration-300",
                       hoveredProject === project.id &&
-                        "translate-x-1 text-primary"
+                        "translate-x-1 text-primary",
                     )}
                   />
                 </div>
