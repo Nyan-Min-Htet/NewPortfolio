@@ -56,16 +56,72 @@ export function Hero() {
           </h1>
 
           {/* Subtitle */}
-          <p className="text-lg md:text-xl text-muted-foreground max-w-xl mx-auto mb-10 opacity-0 animate-fade-up stagger-3">
-            Hi, I'm{" "}
-            <span className="text-foreground font-semibold">Nyan Min Htet</span>
-            . I craft robust backend systems and beautiful user interfaces,
-            bridging the gap between powerful Java applications and modern web
-            experiences.
-          </p>
+          <div className="max-w-3xl mx-auto mb-12 space-y-6 opacity-0 animate-fade-up stagger-1">
+            {/* Core Bio */}
+            <div className="space-y-4">
+              <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
+                I'm{" "}
+                <span className="text-foreground font-semibold">
+                  Nyan Min Htet
+                </span>
+                , a Full-Stack Engineer dedicated to architecting
+                <span className="text-foreground">
+                  {" "}
+                  scalable digital ecosystems
+                </span>
+                . I specialize in transforming complex user journeys into
+                seamless, high-performance interfaces powered by robust,
+                optimized server-side logic.
+              </p>
+
+              {/* Skill Badges - Much cleaner than a list */}
+              <div className="flex flex-wrap gap-2 pt-2">
+                {[
+                  "React",
+                  "TypeScript",
+                  "Tailwind CSS",
+                  "Framer Motion",
+                  "PHP",
+                  "MySQL",
+                  "NoSQL",
+                ].map((skill) => (
+                  <span
+                    key={skill}
+                    className="px-3 py-1 text-xs font-medium rounded-full bg-indigo-500/10 text-indigo-400 border border-indigo-500/20"
+                  >
+                    {skill}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            {/* AI & Process Subtext */}
+            <div className="flex items-start gap-3 p-4 rounded-xl bg-secondary/30 border border-border/50 italic">
+              <div className="mt-1 text-indigo-500">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275Z" />
+                </svg>
+              </div>
+              <p className="text-sm text-muted-foreground/80">
+                Integrating AI-driven development workflows to accelerate
+                delivery without compromising architectural integrity or code
+                quality.
+              </p>
+            </div>
+          </div>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-5 opacity-0 animate-fade-up stagger-4">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-10 opacity-10 animate-fade-up stagger-4">
             <Button variant="hero" size="lg" onClick={scrollToProjects}>
               View My Work
               <ArrowRight className="w-5 h-5" />
@@ -100,14 +156,6 @@ export function Hero() {
               <Mail className="w-5 h-5" />
             </a>
           </div>
-        </div>
-      </div>
-
-      {/* Scroll Indicator */}
-      <div className="absolute bottom-0 -translate-x-1/2 flex flex-col items-center gap-4 opacity-0 animate-fade-up stagger-6">
-        <span className="text-xs text-muted-foreground">Scroll to explore</span>
-        <div className="w-6 h-10 rounded-full border-2 border-muted-foreground/30 flex justify-center pt-2 mt-7">
-          <div className="w-1.5 h-3 bg-primary rounded-full animate-bounce" />
         </div>
       </div>
     </section>

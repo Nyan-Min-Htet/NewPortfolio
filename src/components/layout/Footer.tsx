@@ -12,7 +12,7 @@ export function Footer() {
             <span className="text-gradient font-medium">
               Full-Stack Developer
             </span>{" "}
-            • Java & React
+            • PHP & React
           </div>
         </div>
       </div>

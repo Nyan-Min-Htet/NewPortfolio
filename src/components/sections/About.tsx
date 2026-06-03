@@ -5,32 +5,32 @@ const skills = [
   {
     category: "Backend",
     icon: Server,
-    items: ["Java", "Spring Boot", "Cloud", "Python", "PHP", "Microservices"],
+    items: ["Java", "Cloud", "Python", "PHP", "Microservices"],
     color: "primary",
   },
   {
     category: "Frontend",
     icon: Palette,
-    items: ["React", "TypeScript", "Tailwind CSS", "Next.js", "HTML", "CSS"],
+    items: ["React", "TypeScript", "Tailwind CSS", "HTML", "CSS", "JavaScript"],
     color: "accent",
   },
   {
     category: "Database",
     icon: Database,
-    items: ["PostgreSQL", "MySQL", "MongoDB", "XAMPP", "Hibernate"],
+    items: ["SupaBase", "MySQL", "MongoDB", "XAMPP"],
     color: "primary",
   },
   {
     category: "DevOps & Tools",
     icon: Zap,
-    items: ["Docker", "Git", "CI/CD", "Linux", "Azure"],
+    items: ["Docker", "Git", "CI/CD", "Linux", "Azure", "Postman"],
     color: "accent",
   },
 ];
 
 export function About() {
   return (
-    <section id="about" className="py-24 md:py-40 relative overflow-hidden">
+    <section id="about" className="py-20 md:py-40 relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.01)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.01)_1px,transparent_1px)] bg-[size:80px_80px]" />
 
@@ -56,8 +56,8 @@ export function About() {
               <span className="text-foreground font-medium">
                 full-stack developer
               </span>{" "}
-              based in Myanmar, with a strong foundation in Java backend
-              development and modern frontend technologies.
+              based in Myanmar, with a strong foundation in Web development and
+              modern frontend technologies.
             </p>
             <p className="text-muted-foreground leading-relaxed">
               My journey began at Info Myanmar College where I discovered my
@@ -100,7 +100,7 @@ export function About() {
                   key={skill.category}
                   className={cn(
                     "glass p-6 group hover:border-primary/30 transition-all duration-300",
-                    "opacity-0 animate-fade-up"
+                    "opacity-0 animate-fade-up",
                   )}
                   style={{
                     animationDelay: `${index * 0.1}s`,
@@ -112,7 +112,7 @@ export function About() {
                       "w-12 h-12 rounded-xl flex items-center justify-center mb-4",
                       skill.color === "primary"
                         ? "bg-primary/20 text-primary"
-                        : "bg-accent/20 text-accent"
+                        : "bg-accent/20 text-accent",
                     )}
                   >
                     <Icon className="w-5 h-5" />
