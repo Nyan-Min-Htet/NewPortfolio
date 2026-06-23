@@ -7,6 +7,7 @@ import aIImage from "@/img/image copy.png";
 import fashionImage from "@/img/image copy 2.png";
 import inventoryImage from "@/img/photo_2026-05-04_20-37-05.jpg";
 import eCommerceImage2 from "@/img/photo_2026-05-04_20-55-07.jpg";
+import myanmarWeatherImage from "@/img/image copy 3.png";
 
 const projects = [
   {
@@ -85,6 +86,23 @@ const projects = [
       "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=500&h=300&fit=crop",
     github: "https://github.com/Nyan-Min-Htet/Customer-Information-System",
     live: "https://example.com",
+  },
+  {
+    id: 8,
+    title: "Myanmar Weather Forecasting System",
+    description:
+      " Real-time weather data for 15+ Myanmar cities using Python Flask and Open-Meteo API. Features dynamic city pages, 7-day forecasts, and a responsive bilingual (Myanmar/English) interface. Built with async requests and ThreadPoolExecutor for optimal performance.",
+    technologies: [
+      "HTML",
+      "Tailwind CSS",
+      "JavaScript",
+      "Python Flask",
+      "Open-Meteo API",
+    ],
+    category: "Full-Stack",
+    image: myanmarWeatherImage,
+    github: "https://github.com/Nyan-Min-Htet/weather-focusing.git",
+    live: "https://weather-focusing.vercel.app/",
   },
 ];
 
