@@ -89,7 +89,7 @@ const projects = [
   },
   {
     id: 8,
-    title: "Myanmar Weather Forecasting System",
+    title: "Myanmar Weather Forecasting Dashboard",
     description:
       " Real-time weather data for 15+ Myanmar cities using Python Flask and Open-Meteo API. Features dynamic city pages, 7-day forecasts, and a responsive bilingual (Myanmar/English) interface. Built with async requests and ThreadPoolExecutor for optimal performance.",
     technologies: [
